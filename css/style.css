@@ -2,6 +2,11 @@
 
 
 /* COLORES */
-.green {
+.gris {
     background: rgb(231, 231, 231)
+}
+
+/*imagen cabecera*/
+.cabecera{
+    height: 40vh;
 }
