@@ -1,12 +1,105 @@
-/* CSS GENERAL */
-
-
-/* COLORES */
+/* CSS GENERAL  */ 
 .gris {
-    background: rgb(231, 231, 231)
+    background-color: rgb(238, 238, 238);
+    font-size: 2.2vh;
+}
+body {
+    font-family: 'Abel';
+}
+html {
+    scroll-behavior: smooth;
 }
 
-/*imagen cabecera*/
-.cabecera{
-    height: 40vh;
+.oscuro {
+    background-color: rgb(151, 150, 150);
+}
+
+.masoscuro {
+    background-color: rgb(78, 78, 78);
+}
+
+.muyoscuro {
+    background-color: rgb(22, 22, 22);
+}
+.borde {
+    border: 1px solid red;
+}
+
+.bottomMenu {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: url(../img/subir.jpg) center;
+    background-size: cover;
+    z-index: 9999;
+
+}
+.bottomMenu:hover {
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+
+/* CSS CABEZERA */
+.borde-top {
+    border-top: 3px solid rgb(112, 0, 0);
+}
+
+.borde-bottom {
+    border-bottom: 3px solid rgb(163, 0, 0);
+}
+
+.nav-link:hover {
+    transform: scale(1.2,1.2);
+    transition: all 300ms;
+}
+
+/* CSS BANNER*/ 
+.banner {
+    height: 55vh;
+    background-image: url(../img/museo.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#animation {  
+    animation: owo;
+    animation-fill-mode: backwards;
+    font-size: 50px;
+    color: white;
+    animation-fill-mode: forwards;
+   animation-duration: 4s;
+   -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes owo {
+    33% {
+        transform: translateX(500px);
+        color: rgba(255, 0, 0, 0);
+        font-weight: bold;
+        width: 100%;
+        
+    }
+
+    80% {
+        transform: translateX(-600px);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 100px;
+        width: 100%;
+    }
+
+}
+
+
+.masoscuro img {
+    box-shadow: 1px 1px 0px rgb(42, 42, 42),2px 2px 0px rgb(42, 42, 42),3px 3px 0px rgb(42, 42, 42),4px 4px 2px rgb(42, 42, 42);
+}
+
+.masoscuro img:hover {
+    transform: scale(1.2 , 1.2);
+    transition: all 300ms;
+    cursor: pointer;
 }

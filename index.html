@@ -1,28 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ABP OPPIDUM</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <!-- Cabezera Imagen y Navbar -->
-        <div class="row no-gutters gris">
-            <!-- Logo / Imagen -->
-            <div class="col-2 gris text-center">
-                <img src="img/LogoWeb.png" class="img-fluid" alt="Logo" width="80">
+    <a href="#inicio">
+        <div class="bottomMenu rounded">
+            
+        </div>
+    </a>
+    <script>
+     
+        $( window ).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 300) {
+                $('.bottomMenu').fadeIn();
+            } else {
+                $('.bottomMenu').fadeOut();
+            }
+          
+        });
+        
+    
+    </script>
+
+    <!-- SCRIPT PARA EL BOTON DE SUBIR-->
+
+    <div class="container-fluid p-0" id="inicio">
+        <!-- Barra de navegacion y logo -->
+        <div class="row no-gutters align-items-center gris p-2 borde-top">
+            <!-- Logo -->
+            <div class="col-2 offset-xl-2">
+                <img src="img/LogoWeb.png" class="img-fluid">
             </div>
-            <!-- Barra de Navegacion -->
-            <div class="col-9 offset-1">
-                <nav class=" navbar navbar-expand-lg navbar-light gris">
-                    <a class="navbar-brand" href="#">AbpOppidum</a>
+            <!-- Barra navegacion -->
+            <div class="col-xl-4 offset-xl-2 col-6 offset-4">
+                <nav class="navbar navbar-expand-lg navbar-light gris">
+                    <a class="navbar-brand" href="#">ApbOppidum</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -33,40 +58,227 @@
                                 <a class="nav-link" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Galeria</a>
+                                <a class="nav-link" href="#galeria">Galeria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Videos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Aprendizaje ABP</a>
+                                <a class="nav-link" href="#videos">Videos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Iberos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
+                <!-- Nav bar Ends-->
             </div>
-            <!-- Nav Bar Ends-->
+            <!--Logo ends-->
         </div>
-        <!-- Imagen cabecera -->
-        <div class="row">
-            <div class="col-12">
-                <img src="img/museo.jpg" class="cabecera img-fluid w-100 hw-50" alt="Museo Ibero"/>
+
+        <!-- Banner imagen-->
+        <div class="row no-gutters">
+            <div class="col-12 banner text-center">
+                <p id="animation">Proyecto ABP Oppidum IES Virgen del Carmen.</p>
             </div>
         </div>
 
-        <!--Container Ends -->
+        <!-- Mini Introduccion -->
+        <div class="row no-gutters mt-3 align-items-center p-4">
+            <div class="col-3 offset-2 mr-2">
+                <img src="img/escudo.png" class="img-fluid rounded" width="250">
+            </div>
+            <div class="col-5">
+                
+                <p class="h2"> Proyecto desarrollado por el IES Virgen del Carmen con la colaboración del Museo Ibero de Jaén,
+                    basado en el aprendizaje basado en proyectos (ABP) sobre el poblamiento Íbero en el oppidum de Jaén.</p>    
+            </div>
+        </div>
+
+
+
+        <!-- Articulos -->
+        <div class="row no-gutters gris">
+            <div class="col-12 p-4">
+
+                <!-- Articulo 1 -->
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2">
+                        <h2 class="borde-bottom">Comienza la aventura</h2>
+                        <div class="row">
+                            <!-- Texto -->
+                            <div class="col-8">
+                                <p>l IES Virgen del Carmen (Jaén) se ha sumado a los grandes proyectos relacionados con
+                                    el Patrimonio y lo va a hacer de la mano del proyecto de centro denominado OPPIDUM,
+                                    bajo la metodología de ABP (Aprendizaje Basado en Proyectos), que hará que su
+                                    alumnado se implique en el aprendizaje de la cultura íbera desde diferentes
+                                    perspectivas: tradiciones, lengua, economía, comercio, deportes, literatura, música,
+                                    asentamientos, historia, etc</p>
+
+                                <p>
+                                    Con este gran proyecto pretendemos hacer del IES Virgen del Carmen, una prolongación
+                                    hacia la sociedad que lo rodea, implicando a entidades públicas y privadas y a las
+                                    familias de nuestro alumnado, creando verdaderamente Comunidad de Aprendizaje.
+                                </p>
+
+                                <p>
+                                    Se ha elegido la cultura Ibera por representar una parte importante del Patrimonio
+                                    de la localidad y disponer de un Museo enteramente dedicado al mundo Ibero, el cual
+                                    el alumnado llenará de vida desarrollando muchas de sus actividades dentro de él.
+                                </p>
+                            </div>
+                            <!-- Imagen -->
+                            <div class="col-4">
+                                <img src="img/imagen.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Articulo 2-->
+                <div class="row mt-4">
+                    <div class="col-xl-8 offset-xl-2">
+                        <h2 class="borde-bottom">Las mujeres en los tiempos iberos.</h2>
+                        <div class="row">
+                            <!-- Texto -->
+                            <div class="col-8">
+                                <p>Nuestro alumnado de 4º ESO ha visitado la exposición temporal "Las edades de las
+                                    mujeres iberas. La ritualidad femenina en las colecciones del Museo de Jaén".</p>
+
+                                <p>
+                                    Una visita muy interesante para conocer el valor y la importancia de la presencia
+                                    femenina en aquellos tiempos.
+                                    Nuestro alumnado de ha dado un baño de IGUALDAD, y ha comprobado como ya en la
+                                    antigüedad la mujer trabajaba igual que el hombre, realizaba tareas esenciales para
+                                    su comunidad, y cómo ha quedado relegada por historiadores a través de los siglos
+                                </p>
+
+                                <p>
+                                    Los chicos y chicas han querido mostraros lo que han aprendido a través de su visita
+                                    al museo y de su propia investigación con una serie de trabajos en torno a la mujer
+                                    en tiempos Iberos.
+                                </p>
+                            </div>
+                            <!-- Imagen -->
+                            <div class="col-4">
+                                <img src="img/edades.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col layout articulos -->
+            </div>
+        </div>
+        <!-- Articulos Ends-->
+
+        <!-- Seccion Videos -->
+        <div class="row no-gutters oscuro" id="videos">
+            <div class="col-xl-8 offset-xl-2 p-2">
+                <p class="text-white h2 text-center borde-bottom">Nuestros videos</p>
+                <!-- Link videos-->
+                <div class="row no-gutters">
+
+                    <div class="col-4 offset-1">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item rounded"
+                                src="https://www.youtube.com/embed/LioZXQC8Tkk"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-4 offset-2">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item rounded"
+                                src="https://www.youtube.com/embed/YcfEX6OqnRk"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Galeria -->
+        <div class="row no-gutters masoscuro" id="galeria">
+            <div class="col-xl-8 offset-xl-2 p-2">
+                <p class="text-white h2 text-center borde-bottom">Galeria</p>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/opidum.jpeg" class="img-fluid">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Footer Website -->
+        <div class="row no-gutters muyoscuro text-light" id="contacto">
+            <div class="col-xl-8 offset-xl-2 p-2">
+                <div class="row pt-5">
+                    <div class="col-3">
+                        <p>IES Virgen Del Carmen</p>
+                        <img src="img/escudo.png" class="img-fluid" width="120">
+                    </div>
+                    <div class="col-3">
+                        <p>Designed By</p>
+                        <p>Name</p>
+                        <p>Name</p>
+                        <p>Name</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Contacto</p>
+                        <p>Twitter</p>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Titulo de algo</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, molestiae. Officiis dolorum,
+                            fugiat ea minima laboriosam rerum nisi voluptatibus ullam temporibus a similique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Container Ends-->
     </div>
-
-    <!-- Bootstrap -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="jquery/jq.js"></script>
-    <script src="popper/popper.min.js"></script>
+    <!-- Js , JQuery, Popper Boostrap-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
