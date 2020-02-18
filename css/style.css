@@ -67,7 +67,7 @@ html {
 #animation {  
     animation: owo;
     animation-fill-mode: backwards;
-    font-size: 50px;
+    font-size: 8vh;
     color: white;
     animation-fill-mode: forwards;
    animation-duration: 4s;
@@ -103,3 +103,55 @@ html {
     transition: all 300ms;
     cursor: pointer;
 }
+
+
+/*MEDIA QUERIES*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .h2{
+        font-size: 3vh;
+    }
+    .margen-pie{
+        margin-top: 2em;
+    }
+    #animation{
+        font-size: 4vh;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .h2{
+        font-size: 2.5vh;
+        
+    }
+    .web-info{
+        font-size: 1.75vh;
+    }
+    #animation{
+        font-size: 4.5vh;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .h2{
+        font-size: 3vh; 
+    }
+    .web-info{
+        font-size: 2vh;
+    }
+    #animation{
+        font-size: 6vh;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #animation{
+        font-size: 7vh;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
