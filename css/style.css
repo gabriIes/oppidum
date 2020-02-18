@@ -94,12 +94,12 @@ html {
 }
 
 
-.masoscuro img {
+.miniaturas {
     box-shadow: 1px 1px 0px rgb(42, 42, 42),2px 2px 0px rgb(42, 42, 42),3px 3px 0px rgb(42, 42, 42),4px 4px 2px rgb(42, 42, 42);
 }
 
-.masoscuro img:hover {
-    transform: scale(1.2 , 1.2);
+.miniaturas:hover {
+    transform: scale(1.1 , 1.1);
     transition: all 300ms;
     cursor: pointer;
 }
