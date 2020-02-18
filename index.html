@@ -21,7 +21,9 @@
         </div>
     </a>
     <script>
-     
+      
+
+        //back to top
         $( window ).scroll(function() {
             var y = $(this).scrollTop();
             if (y > 300) {
@@ -221,38 +223,86 @@
                 <p class="text-white h2 text-center borde-bottom">Galeria</p>
                 <div class="row">
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200121_104155.jpg" class="img-fluid" data-toggle="modal"
+                        data-target="#myModal">
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title texto">Vivienda Unifamiliar de la Axarquia</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/IMG_20200121_104155.jpg" class="img-fluid">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200109_122709_BURST001_COVER.jpg" class="img-fluid">
                     </div>
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200121_104123.jpg" class="img-fluid">
                     </div>
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200128_103850.jpg" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="row mt-4">
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200109_123444.jpg" class="img-fluid">
                     </div>
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200128_103934.jpg" class="img-fluid">
                     </div>
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200128_110301.jpg" class="img-fluid">
                     </div>
                     <div class="col-3">
-                        <img src="img/opidum.jpeg" class="img-fluid">
+                        <img src="img/IMG_20200121_104248.jpg" class="img-fluid">
                     </div>
                 </div>
-
-
             </div>
         </div>
+        <!--GALLERY 2-->
+        <div class="row mt-4">
+            <div class="col-3">
+            <div class="thumbnail p-1 text-center bg-dark">
 
+                <img
+                    class="img-fluid gris"
+                    data-toggle="modal"
+                    data-target="#myModal"
+                    src="img/IMG_20200121_104155.jpg"
+                    alt="Fjords">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title texto">Vivienda Unifamiliar de la Axarquia</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/IMG_20200121_104155.jpg" class="img-fluid">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Footer Website -->
         <div class="row no-gutters muyoscuro text-light" id="contacto">
             <div class="col-xl-10 offset-xl-2 p-2">
