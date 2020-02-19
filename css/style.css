@@ -7,7 +7,7 @@ body {
     font-family: 'Abel';
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 .oscuro {
@@ -72,6 +72,7 @@ html {
     animation-fill-mode: forwards;
    animation-duration: 4s;
    -webkit-animation-fill-mode: forwards;
+   
 }
 
 @keyframes owo {
@@ -128,6 +129,9 @@ html {
     .web-info{
         font-size: 1.75vh;
     }
+    .url{
+        font-size: 1.25vh;
+    }
     #animation{
         font-size: 4.5vh;
     }
@@ -143,6 +147,9 @@ html {
     }
     #animation{
         font-size: 6vh;
+    }
+    .url{
+        font-size: 1.75vh;
     }
  }
 
